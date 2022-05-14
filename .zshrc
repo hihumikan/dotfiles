@@ -10,6 +10,7 @@ alias gst='git status'
 alias gco='git checkout'
 alias gf='git fetch'
 alias gc='git commit'
+alias gcz='git cz'
 
 ## file
 alias pwdc='pwd | tr -d "\n" | pbcopy'
