@@ -30,6 +30,14 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 
+## Script
+cdls ()
+{
+    \cd "$@" && clear && lsss
+}
+alias cd="cdls"
+
+
 #shell 
 ## StarShip
 eval "$(starship init zsh)"
@@ -48,18 +56,14 @@ source ~/Git/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
-## anyenv
-eval "$(anyenv init -)"
-
 ## Rustlang
 source $HOME/.cargo/env
 
+## anyenv
+eval "$(anyenv init -)"
 
-## Script
-cdls ()
-{
-    \cd "$@" && clear && lsss
-}
-alias cd="cdls"
+## asdf
+. /usr/local/opt/asdf/libexec/asdf.sh
 
-
+## Ruby
+export PATH="/usr/local/opt/ruby/bin:$PATH"
