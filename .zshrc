@@ -53,3 +53,13 @@ eval "$(anyenv init -)"
 
 ## Rustlang
 source $HOME/.cargo/env
+
+
+## Script
+cdls ()
+{
+    \cd "$@" && clear && lsss
+}
+alias cd="cdls"
+
+
