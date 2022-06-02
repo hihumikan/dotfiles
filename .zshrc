@@ -11,6 +11,7 @@ alias gco='git checkout'
 alias gf='git fetch'
 alias gc='git commit'
 alias gcz='git cz'
+alias cdd='cd ./dev/'
 
 ## file
 alias pwdc='pwd | tr -d "\n" | pbcopy'
@@ -58,9 +59,6 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 ## Rustlang
 source $HOME/.cargo/env
-
-## anyenv
-eval "$(anyenv init -)"
 
 ## asdf
 . /usr/local/opt/asdf/libexec/asdf.sh
