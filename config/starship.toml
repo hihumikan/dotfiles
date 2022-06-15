@@ -1,0 +1,11 @@
+[git_status]
+conflicted = "Conflict💀"
+ahead = "ahed🏎💨"
+behind = "behind😰"
+diverged = "diverged😵"
+untracked = "🤷‍"
+stashed = "📦"
+modified = "📝"
+staged = "🗂️"
+renamed = "✍️"
+deleted = "🗑"
