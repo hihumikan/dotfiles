@@ -1,1 +1,2 @@
 brew upgrade
+gibo update
