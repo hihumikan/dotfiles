@@ -1,2 +1,2 @@
-brew update && brew upgrade
+brew upgrade
 gibo update
