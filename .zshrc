@@ -62,6 +62,3 @@ source $HOME/.cargo/env
 
 ## asdf
 . /usr/local/opt/asdf/libexec/asdf.sh
-
-## Ruby
-export PATH="/usr/local/opt/ruby/bin:$PATH"
