@@ -9,3 +9,7 @@ modified = "📝"
 staged = "🗂️"
 renamed = "✍️"
 deleted = "🗑"
+
+[kubernetes]
+format = 'on [⛵ ($user)|($cluster)|$context\($namespace\)](dimmed 213) '
+disabled = false
