@@ -53,8 +53,11 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-# kubernetes
-alias kx="switch"
 export PATH="${PATH}:${HOME}/.krew/bin"
+
 export PATH="$PATH:/home/hihumikan/istio-1.17.2/bin"
+
 INSTALLATION_PATH=$(brew --prefix switch) && source $INSTALLATION_PATH/switch.sh
+alias kx="switch"
+
+source <(kubectl completion zsh)
