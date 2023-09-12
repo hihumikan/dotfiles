@@ -36,6 +36,8 @@ alias cd="cdls"
 # Package
 ## Linux Brew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+## Sharship
 eval "$(starship init zsh)"
 
 ## Volta
