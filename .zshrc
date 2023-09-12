@@ -15,12 +15,7 @@ alias cdd='cd ./dev/'
 
 ## file
 alias pwdc='pwd | tr -d "\n" | pbcopy'
-alias emacs='nvim'
-alias vim='nvim'
 alias egrep='egrep --color=auto'
-
-## docker
-alias d='docker' 
 
 ## dir
 alias ls='exa'
@@ -38,27 +33,18 @@ cdls ()
 }
 alias cd="cdls"
 
-
-#shell 
-## StarShip
+# Package
+## Linux Brew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(starship init zsh)"
 
-## HomeBrew
-export PATH="$PATH:/opt/homebrew/bin/"
-
-## gpg
-export GPG_TTY=$TTY
-
-## zsh-autocomplete ~/Git
-source ~/Git/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-
-# language
-## volta
+## Volta
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
-## Rustlang
-source $HOME/.cargo/env
+## Sheldon
+eval "$(sheldon source)"
 
-## asdf
-. /usr/local/opt/asdf/libexec/asdf.sh
+## ASDF
+. "$HOME/.asdf/asdf.sh"
+fpath=(${ASDF_DIR}/completions $fpath)
