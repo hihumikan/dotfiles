@@ -45,6 +45,6 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 ## Sheldon
 eval "$(sheldon source)"
 
-## ASDF
+## asdf
 . "$HOME/.asdf/asdf.sh"
 fpath=(${ASDF_DIR}/completions $fpath)
