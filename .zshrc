@@ -18,9 +18,9 @@ alias pwdc='pwd | tr -d "\n" | pbcopy'
 alias egrep='egrep --color=auto'
 
 ## dir
-alias ls='exa'
-alias lss='exa --git --time-style=long-iso -gl --icons'
-alias lsss='exa -agl --time-style=long-iso -g --git --icons'
+alias ls='eza'
+alias lss='eza --git --time-style=long-iso -gl --icons'
+alias lsss='eza -agl --time-style=long-iso -g --git --icons'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
