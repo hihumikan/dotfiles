@@ -31,9 +31,8 @@ inline = 'autoload -Uz colors && zsh-defer colors'
 github = 'zsh-users/zsh-autosuggestions'
 apply = ["defer"]
 
-[plugins.zsh-completions]
-github = 'zsh-users/zsh-completions'
-apply = ["defer"]
+[plugins.zsh-autocomplete]
+github = 'marlonrichert/zsh-autocomplete'
 
 [plugins.zsh-command-time]
 github = 'popstas/zsh-command-time'
