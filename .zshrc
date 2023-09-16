@@ -19,8 +19,8 @@ alias egrep='egrep --color=auto'
 
 ## dir
 alias ls='eza'
-alias lss='eza --git --time-style=long-iso -gl --icons'
-alias lsss='eza -agl --time-style=long-iso -g --git --icons'
+alias lss='eza --git --time-style=long-iso -aglh --icons'
+
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -36,8 +36,6 @@ alias cd="cdls"
 # Package
 ## Linux Brew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-## Sharship
 eval "$(starship init zsh)"
 
 ## Volta
@@ -46,7 +44,3 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 ## Sheldon
 eval "$(sheldon source)"
-
-## asdf
-. "$HOME/.asdf/asdf.sh"
-fpath=(${ASDF_DIR}/completions $fpath)
