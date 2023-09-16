@@ -17,6 +17,9 @@ alias cdd='cd ./dev/'
 alias pwdc='pwd | tr -d "\n" | pbcopy'
 alias egrep='egrep --color=auto'
 
+## bat
+alias bat='bat -p'
+
 ## dir
 alias ls='eza'
 alias lss='eza --git --time-style=long-iso -aglh --icons'
