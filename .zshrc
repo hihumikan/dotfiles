@@ -22,7 +22,8 @@ alias bat='bat -p'
 
 ## dir
 alias ls='eza'
-alias lss='eza --git --time-style=long-iso -aglh --icons'
+alias lss='eza --time-style=long-iso -aglh --icons'
+alias lsss='eza --git --time-style=long-iso -aglh --icons'
 
 alias ..='cd ..'
 alias ...='cd ../..'
