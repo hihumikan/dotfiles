@@ -32,7 +32,7 @@ alias ....='cd ../../..'
 ## Script
 cdls ()
 {
-    \cd "$@" && clear && lsss
+    \cd "$@" && clear && lss
 }
 alias cd="cdls"
 
