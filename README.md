@@ -9,11 +9,10 @@
   - shellscriptでOSTYPEを分ける
   - ネスト過ぎるファイル分割
   - 自動セットアップ系
+  - vimrc, nvimrc
 - 入れないもの
   - wezterm
-  - vimrc
   - tmux
-  - nvimrc
   - pluginがtomlじゃないもの
   - asdf
     - 入れるとしてもrye
