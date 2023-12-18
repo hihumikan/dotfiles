@@ -17,3 +17,4 @@
   - pluginがtomlじゃないもの
   - asdf
     - 入れるとしてもrye
+  - oh my zshやp10k
