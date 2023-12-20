@@ -35,6 +35,10 @@ alias apti='sudo apt install -y'
 alias aptr='sudo apt remove -y'
 alias aptu='sudo apt update && sudo apt upgrade -y'
 
+### docker alias
+
+alias dc='docker compose'
+
 ### etc
 
 eval "$(thefuck --alias)"
