@@ -41,6 +41,7 @@ alias dc='docker compose'
 ## etc
 alias fuck='thefuck'
 alias ipa='ip -c a'
+alias ipas='ip -c -s a'
 
 ## Script
 cdls() {
