@@ -39,7 +39,7 @@ alias aptu='sudo apt update && sudo apt upgrade -y'
 alias dc='docker compose'
 
 ## etc
-eval "$(thefuck --alias)"
+alias fuck='thefuck'
 
 ## Script
 cdls() {
