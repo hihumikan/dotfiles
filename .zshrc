@@ -40,13 +40,10 @@ alias aptu='sudo apt update && sudo apt upgrade -y'
 alias dc='docker compose'
 
 ### etc
-
 eval "$(thefuck --alias)"
 
-
 ## Script
-cdls ()
-{
+cdls() {
     \cd "$@" && clear && lss
 }
 alias cd="cdls"
@@ -64,4 +61,3 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 ## Sheldon
 eval "$(sheldon source)"
-
