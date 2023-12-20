@@ -36,7 +36,6 @@ alias aptr='sudo apt remove -y'
 alias aptu='sudo apt update && sudo apt upgrade -y'
 
 ### docker alias
-
 alias dc='docker compose'
 
 ### etc
