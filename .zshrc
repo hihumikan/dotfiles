@@ -30,15 +30,15 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-### apt alias
+## apt alias
 alias apti='sudo apt install -y'
 alias aptr='sudo apt remove -y'
 alias aptu='sudo apt update && sudo apt upgrade -y'
 
-### docker alias
+## docker alias
 alias dc='docker compose'
 
-### etc
+## etc
 eval "$(thefuck --alias)"
 
 ## Script
