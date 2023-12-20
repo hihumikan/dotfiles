@@ -17,7 +17,7 @@ alias pwdc='pwd | tr -d "\n" | pbcopy'
 alias egrep='egrep --color=auto'
 
 ## bat
-alias bat='bat --paging=never -p'
+alias cat='bat --paging=never -p'
 alias batt='bat -p'
 alias battt='bat -A -p'
 
