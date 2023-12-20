@@ -30,6 +30,11 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
+### apt alias
+alias apti='sudo apt install -y'
+alias aptr='sudo apt remove -y'
+alias aptu='sudo apt update && sudo apt upgrade -y'
+
 ### etc
 
 eval "$(thefuck --alias)"
