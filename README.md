@@ -18,5 +18,5 @@ https://scrapbox.io/dev-hihumikan/dotfiles
   - tmux
   - pluginがtomlじゃないもの
   - asdf
-    - 入れるとしてもrye
+    - 入れるとしてもrtx
   - oh my zshやp10k
