@@ -49,3 +49,15 @@ apply = ["defer"]
 [plugins.autopair]
 github = "hlissner/zsh-autopair"
 apply = ["defer"]
+
+[plugins.zsh-256color]
+github = "chrissicool/zsh-256color"
+apply = ["defer"]
+
+[plugins.zsh-artisan]
+github = "jessarcher/zsh-artisan"
+apply = ["defer"]
+
+[plugins.zsh-async]
+github = "mafredri/zsh-async"
+apply = ["defer"]
