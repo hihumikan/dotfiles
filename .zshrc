@@ -52,10 +52,7 @@ alias cd="cdls"
 dotfiles_home="./dotfiles"
 
 async_function() {
-    if test -n "$(git -C ${dotfiles_home} status --porcelain)" ||
-        ! git -C ${dotfiles_home} diff --exit-code --stat --cached origin/master > /dev/null ; then
-        git -C ${dotfiles_home} pull
-    fi
+    cd "$dotfiles_home" && git diff --quiet || git pull origin master
 }
 
 async_function &
