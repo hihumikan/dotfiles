@@ -51,13 +51,33 @@ alias cd="cdls"
 
 dotfiles_home="./dotfiles"
 
-async_function() {
-    if test -n "$(git -C ${dotfiles_home} status --porcelain)" ||
-        ! git -C ${dotfiles_home} diff --exit-code --stat --cached origin/master > /dev/null ; then
-        git -C ${dotfiles_home} pull
+# メッセージを非表示にする関数
+hide_message() {
+    if [ -t 1 ]; then
+        echo -e "\e[8m"  # ターミナルがある場合は文字を非表示にする
     fi
 }
 
+# メッセージを表示する関数
+show_message() {
+    if [ -t 1 ]; then
+        echo -e "\e[0m"  # ターミナルがある場合は文字を表示する
+    fi
+}
+
+# 非同期で実行する関数
+async_function() {
+    hide_message  # メッセージを非表示にする
+    if test -n "$(git -C ${dotfiles_home} status --porcelain)" ||
+        ! git -C ${dotfiles_home} diff --exit-code --stat --cached origin/master > /dev/null ; then
+        echo -e "\e[36m=== DOTFILES IS DIRTY ===\e[m"
+        echo -e "\e[33mThe dotfiles have been changed.\e[m"
+        git -C ${dotfiles_home} pull
+    fi
+    show_message  # メッセージを表示する
+}
+
+# 非同期で関数を実行
 async_function &
 
 # Package
