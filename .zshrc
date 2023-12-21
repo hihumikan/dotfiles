@@ -69,7 +69,6 @@ function auto_sync() {
         fi
     else
         echo -e "\e[1;31m [failed]\e[m"
-        echo -e "\e[1;33m[warn] Coud not pull remote changes.\e[m"
     fi
 }
 
@@ -78,8 +77,6 @@ auto_sync
 if [[ ! -o login ]]; then
     warn_dirty
 fi
-
-eval "$(sheldon source)"
 
 # Package
 ## Linux Brew
