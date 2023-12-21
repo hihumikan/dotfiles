@@ -74,7 +74,6 @@ function auto_sync() {
 }
 
 auto_sync
-#async_function &
 
 # Package
 ## Linux Brew
