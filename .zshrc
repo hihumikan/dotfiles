@@ -49,7 +49,7 @@ cdls() {
 }
 alias cd="cdls"
 
-dotfiles_home="~/dotfiles"
+dotfiles_home="./dotfiles"
 if test -n "$(git -C ${dotfiles_home} status --porcelain)" ||
 ! git -C ${dotfiles_home} diff --exit-code --stat --cached origin/main > /dev/null ; then
     echo -e "\e[36m=== DOTFILES IS DIRTY ===\e[m"
