@@ -50,12 +50,15 @@ cdls() {
 alias cd="cdls"
 
 dotfiles_home="./dotfiles"
-if test -n "$(git -C ${dotfiles_home} status --porcelain)" ||
-! git -C ${dotfiles_home} diff --exit-code --stat --cached origin/master > /dev/null ; then
-    echo -e "\e[36m=== DOTFILES IS DIRTY ===\e[m"
-    echo -e "\e[33mThe dotfiles have been changed.\e[m"
-    git -C ${dotfiles_home} pull
-fi
+
+async_function() {
+    if test -n "$(git -C ${dotfiles_home} status --porcelain)" ||
+        ! git -C ${dotfiles_home} diff --exit-code --stat --cached origin/master > /dev/null ; then
+        git -C ${dotfiles_home} pull
+    fi
+}
+
+async_function &
 
 # Package
 ## Linux Brew
