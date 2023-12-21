@@ -44,18 +44,18 @@ alias ipa='ip -c a'
 alias ipas='ip -c -s a'
 
 ## Script
-cdls() {
-    \cd "$@" && clear && lss
-}
-alias cd="cdls"
 
 dotfiles_home="./dotfiles"
 
 async_function() {
-    cd "$dotfiles_home" && git diff --quiet || git pull origin master
+    (cd "$dotfiles_home" && git diff --quiet || git pull origin master) > /dev/null 2>&1
 }
-
 async_function &
+
+cdls() {
+    \cd "$@" && clear && lss
+}
+alias cd="cdls"
 
 # Package
 ## Linux Brew
