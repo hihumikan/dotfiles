@@ -1,0 +1,92 @@
+{
+  "security.allowedUNCHosts": ["wsl.localhost"],
+  "workbench.colorTheme": "Atom One Dark",
+  "workbench.iconTheme": "material-icon-theme",
+  "files.associations": {
+    "*.embeddedhtml": "html",
+    ".env*": "dotenv"
+  },
+  "editor.tokenColorCustomizations": {
+    "[*Light*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#000"
+          }
+        }
+      ]
+    },
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#fff"
+          }
+        }
+      ]
+    },
+    "textMateRules": [
+      {
+        "scope": "ref.license",
+        "settings": {
+          "foreground": "#cccccc"
+        }
+      },
+      {
+        "scope": "ref.snippet",
+        "settings": {
+          "foreground": "#606060"
+        }
+      }
+    ]
+  },
+  "editor.inlayHints.enabled": "off",
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f",
+    "editor.background": "#080808",
+    "terminal.background": "#000000",
+    "terminal.foreground": "#D0D0D0",
+    "terminalCursor.background": "#D0D0D0",
+    "terminalCursor.foreground": "#D0D0D0",
+    "terminal.ansiBlack": "#000000",
+    "terminal.ansiBlue": "#0E5A94",
+    "terminal.ansiBrightBlack": "#505050",
+    "terminal.ansiBrightBlue": "#0E5A94",
+    "terminal.ansiBrightCyan": "#00AABB",
+    "terminal.ansiBrightGreen": "#37B349",
+    "terminal.ansiBrightMagenta": "#B31E8D",
+    "terminal.ansiBrightRed": "#EB008A",
+    "terminal.ansiBrightWhite": "#FFFFFF",
+    "terminal.ansiBrightYellow": "#F8CA12",
+    "terminal.ansiCyan": "#00AABB",
+    "terminal.ansiGreen": "#37B349",
+    "terminal.ansiMagenta": "#B31E8D",
+    "terminal.ansiRed": "#EB008A",
+    "terminal.ansiWhite": "#D0D0D0",
+    "terminal.ansiYellow": "#F8CA12"
+  },
+  "editor.wordWrap": "off",
+  "diffEditor.wordWrap": "off",
+  "editor.guides.indentation": false,
+  "editor.guides.bracketPairs": false,
+  "editor.fontFamily": "UDEV Gothic 35NF",
+  "terminal.integrated.fontFamily": "UDEV Gothic NF",
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "dotenv.enableAutocloaking": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.confirmSync": false,
+  "workbench.startupEditor": "none"
+}
