@@ -2,4 +2,4 @@
 
 ln -sf ~/dotfiles/.zshrc ~/.zshrc
 
-echo "--- Link dotfiles is fuxxing Done!  ---"
+echo "--- Link dotfiles is Done!  ---"
