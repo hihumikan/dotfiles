@@ -16,15 +16,10 @@ alias cdd='cd ./RANK'
 alias pwdc='pwd | tr -d "\n" | pbcopy'
 alias egrep='egrep --color=auto'
 
-## bat
-alias cat='bat --paging=never -p'
-alias batt='bat -p'
-alias battt='bat -A -p'
-
 ## dir
-alias ls='eza'
-alias lss='eza --time-style=long-iso -aglh --icons'
-alias lsss='eza --git --time-style=long-iso -aglh --icons'
+alias ls='ls'
+alias lss='ls --time-style=long-iso -aglh'
+alias lsss='eza --git --time-style=long-iso -aglh'
 
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -39,7 +34,6 @@ alias aptu='sudo apt update && sudo apt upgrade -y'
 alias dc='docker compose'
 
 ## etc
-alias fuck='thefuck'
 alias ipa='ip -c a'
 alias ipas='ip -c -s a'
 
@@ -57,21 +51,3 @@ cdls() {
     \cd "$@" && clear && lss
 }
 alias cd="cdls"
-
-# Package
-## Linux Brew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-## starship
-eval "$(starship init zsh)"
-
-## Volta
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
-
-## Sheldon
-eval "$(sheldon source)"
-
-
-## gibo comp
-eval "$(gibo completion zsh)"
