@@ -19,7 +19,6 @@ alias egrep='egrep --color=auto'
 ## dir
 alias ls='ls'
 alias lss='ls --time-style=long-iso -aglh'
-alias lsss='eza --git --time-style=long-iso -aglh'
 
 alias ..='cd ..'
 alias ...='cd ../..'
