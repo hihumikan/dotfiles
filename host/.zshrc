@@ -1,5 +1,6 @@
 ## Git alias
 alias ga='git add'
+alias gaa='git add --all'
 alias gd='git diff'
 alias gs='git status'
 alias gps='git push'
@@ -10,6 +11,7 @@ alias gco='git checkout'
 alias gf='git fetch'
 alias gc='git commit'
 alias gcz='git cz'
+alias gpsup='git push --set-upstream origin $(git_current_branch)'
 alias cdd='cd ./RANK'
 
 ## file
