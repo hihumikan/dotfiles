@@ -52,7 +52,9 @@ async_function() {
     (cd "$dotfiles_home" && git diff --quiet || git pull origin master) > /dev/null 2>&1
 }
 
-async_function & disown
+alias dotfilesync=async_function
+
+# async_function & disown
 
 cdls() {
     \cd "$@" && clear && lss
