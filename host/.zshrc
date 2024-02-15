@@ -75,6 +75,5 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 ## Sheldon
 eval "$(sheldon source)"
 
-
 ## gibo comp
 eval "$(gibo completion zsh)"
