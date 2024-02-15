@@ -19,9 +19,9 @@ alias pwdc='pwd | tr -d "\n" | pbcopy'
 alias egrep='egrep --color=auto'
 
 ## bat
-alias cat='bat --paging=never -p'
 alias batt='bat -p'
 alias battt='bat -A -p'
+alias batc='bat -p --paging=never'
 
 ## dir
 alias ls='eza'
