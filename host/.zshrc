@@ -20,8 +20,8 @@ alias egrep='egrep --color=auto'
 
 ## bat
 alias batt='bat -p'
-alias battt='bat -A -p'
-alias batc='bat -p --paging=never'
+alias battt='bat --paging=never'
+alias batttt='bat -A -p'
 
 ## dir
 alias ls='eza'
