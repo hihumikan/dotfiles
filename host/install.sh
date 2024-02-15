@@ -6,3 +6,5 @@ curl https://get.volta.sh | bash
 
 echo "Installing build-essential"
 sudo apt install build-essential
+
+brew bundle 
