@@ -1,5 +1,4 @@
-echo "Installing Homebrew"
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+sudo apt update && apt -y upgrade
 
 echo "Installing Volta"
 curl https://get.volta.sh | bash
