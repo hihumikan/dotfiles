@@ -59,3 +59,7 @@ eval "$(sheldon source)"
 
 ## gibo comp
 eval "$(gibo completion zsh)"
+
+
+## anyframe peco
+bindkey '^xb' anyframe-widget-cdr

@@ -60,3 +60,7 @@ apply = ["defer"]
 [plugins.zsh-async]
 github = "mafredri/zsh-async"
 apply = ["defer"]
+
+[plugins.anyframe]
+github = "mollifier/anyframe"
+apply = ["defer"]
