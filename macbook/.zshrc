@@ -63,3 +63,5 @@ eval "$(gibo completion zsh)"
 
 ## anyframe peco
 bindkey '^xb' anyframe-widget-cdr
+
+source "$HOME/.rye/env"

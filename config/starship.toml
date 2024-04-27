@@ -15,3 +15,5 @@ format = 'on [⛵ ($user)|($cluster)|$context\($namespace\)](dimmed 213) '
 disabled = false
 detect_files = ['k8s']
 
+[gcloud]
+disabled = true
