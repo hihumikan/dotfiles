@@ -35,6 +35,7 @@ alias ....='cd ../../..'
 ## etc
 alias ipa='ip -c a'
 alias ipas='ip -c -s a'
+alias E='exec $SHELL -l'
 
 # async_function & disown
 
