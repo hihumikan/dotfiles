@@ -37,6 +37,10 @@ alias ipa='ip -c a'
 alias ipas='ip -c -s a'
 alias E='exec $SHELL -l'
 
+alias PA=". .venv/bin/activate"
+alias PD="deactivate"
+alias E='exec $SHELL -l'
+
 # async_function & disown
 
 cdls() {
@@ -61,8 +65,6 @@ eval "$(sheldon source)"
 ## gibo comp
 eval "$(gibo completion zsh)"
 
-
-## anyframe peco
-bindkey '^xb' anyframe-widget-cdr
-
 source "$HOME/.rye/env"
+
+. "$HOME/.cargo/env"
