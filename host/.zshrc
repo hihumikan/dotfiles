@@ -61,8 +61,9 @@ alias cd="cdls"
 
 # Package
 ## Linux Brew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 eval "$(starship init zsh)"
 eval "$(sheldon source)"
 eval "$(gibo completion zsh)"
+export PATH="/home/hihumikan/.local/bin:$PATH"
 export GPG_TTY=$(tty)
