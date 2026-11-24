@@ -65,3 +65,4 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 eval "$(starship init zsh)"
 eval "$(sheldon source)"
 eval "$(gibo completion zsh)"
+export GPG_TTY=$(tty)
