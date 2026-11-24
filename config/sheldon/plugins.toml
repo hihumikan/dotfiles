@@ -33,34 +33,6 @@ apply = ["defer"]
 [plugins.zsh-autocomplete]
 github = 'marlonrichert/zsh-autocomplete'
 
-[plugins.zsh-command-time]
-github = 'popstas/zsh-command-time'
-apply = ["defer"]
-
-[plugins.zsh-background-notify]
-github = 't413/zsh-background-notify'
-apply = ["defer"]
-
 [plugins.fast-syntax-highlighting]
 github = 'zdharma-continuum/fast-syntax-highlighting'
-apply = ["defer"]
-
-[plugins.autopair]
-github = "hlissner/zsh-autopair"
-apply = ["defer"]
-
-[plugins.zsh-256color]
-github = "chrissicool/zsh-256color"
-apply = ["defer"]
-
-[plugins.zsh-artisan]
-github = "jessarcher/zsh-artisan"
-apply = ["defer"]
-
-[plugins.zsh-async]
-github = "mafredri/zsh-async"
-apply = ["defer"]
-
-[plugins.anyframe]
-github = "mollifier/anyframe"
 apply = ["defer"]

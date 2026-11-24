@@ -12,7 +12,7 @@ alias gf='git fetch'
 alias gc='git commit'
 alias gcz='git cz'
 alias gpsup='git push --set-upstream origin $(git_current_branch)'
-alias cdd='cd ./RANK'
+alias cdd='cd ./rank'
 
 ## file
 alias pwdc='pwd | tr -d "\n" | pbcopy'
@@ -44,17 +44,15 @@ alias dc='docker compose'
 alias ipa='ip -c a'
 alias ipas='ip -c -s a'
 
-## Script
+alias PA=". .venv/bin/activate"
+alias PD="deactivate"
+alias E='exec $SHELL -l'
 
-dotfiles_home="./dotfiles"
+alias dc="docker compose"
+alias dps="docker ps"
 
-async_function() {
-    (cd "$dotfiles_home" && git diff --quiet || git pull origin master) > /dev/null 2>&1
-}
-
-alias dotfilesync=async_function
-
-# async_function & disown
+alias cdrive="cd /mnt/c/Users/musec/"
+alias wtu="wt.exe wsl.exe -d Ubuntu --cd "$PWD""
 
 cdls() {
     \cd "$@" && clear && lss
@@ -64,16 +62,6 @@ alias cd="cdls"
 # Package
 ## Linux Brew
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-## starship
 eval "$(starship init zsh)"
-
-## Volta
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
-
-## Sheldon
 eval "$(sheldon source)"
-
-## gibo comp
 eval "$(gibo completion zsh)"
