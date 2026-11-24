@@ -67,3 +67,4 @@ eval "$(sheldon source)"
 eval "$(gibo completion zsh)"
 export PATH="/home/hihumikan/.local/bin:$PATH"
 export GPG_TTY=$(tty)
+eval "$(~/.local/bin/mise activate zsh)"
